@@ -1,47 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Website Juang</title>
+  <meta charset="UTF-8">
+  <title>Kartu Profil Juang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       background-color: #f0f8ff;
       font-family: sans-serif;
-      text-align: center;
-      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-    h1 {
+
+    .card {
+      background-color: #fff;
+      width: 320px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .card h1 {
+      margin: 10px 0;
       color: #2c3e50;
     }
-    p {
+
+    .card p {
       color: #555;
-      font-size: 18px;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
-    a {
+
+    .social-buttons a {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px 5px;
       padding: 10px 20px;
-      background-color: #3498db;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s, border-color 0.3s;
     }
-    img {
-      width: 200px;
-      border-radius: 10px;
-      margin-top: 20px;
+
+    .social-buttons a i {
+      margin-right: 8px;
+    }
+
+    .instagram-btn {
+      background-color: #e1306c;
+      border: 2px solid #e1306c;
+    }
+
+    .instagram-btn:hover {
+      background-color: #c7225f;
+      border-color: #c7225f;
+    }
+
+    .tiktok-btn {
+      background-color: #25F4EE;
+      border: 2px solid #25F4EE;
+      color: #000;
+    }
+
+    .tiktok-btn:hover {
+      background-color: #1ccfd1;
+      border-color: #1ccfd1;
+    }
+
+    .facebook-btn {
+      background-color: #1877F2;
+      border: 2px solid #1877F2;
+    }
+
+    .facebook-btn:hover {
+      background-color: #145dbf;
+      border-color: #145dbf;
     }
   </style>
 </head>
 <body>
 
-  <h1>Heyyoo, aku Juang!</h1>
-  <p>Sosmed Juang.</p>
+  <div class="card">
+    <img src="https://via.placeholder.com/120" alt="Foto Juang">
+    <h1>Heyyoo, aku Juang!</h1>
+    <p>Sosmed Juang.</p>
 
-  <a href="https://instagram.com/jjj_nps" target="_blank">instagram!</a>
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/jjj_nps" target="_blank" class="instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
 
-  <br>
-  <a href="htpps://tiktok.com/@25n8" target="_blank">tiktok!
-  <a/>
-  
+      <a href="https://www.tiktok.com/@25n8_" target="_blank" class="tiktok-btn">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+
+      <a href="https://www.facebook.com/share/18cJr9uyTN/?mibextid=wwXIfr" target="_blank" class="facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
